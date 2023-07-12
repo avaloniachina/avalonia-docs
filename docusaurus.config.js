@@ -9,10 +9,11 @@ const config = {
   title: 'Avalonia UI',
   tagline: 'Developer Documentation Portal',
   favicon: 'img/favicon.ico',
-  url: 'https://docs.avaloniaui.net',
-  baseUrl: '/',
-  organizationName: 'avaloniaui', // Usually your GitHub org/user name.
-  projectName: 'avalonia', // Usually your repo name.
+  url: 'https://github.com',
+  baseUrl: '/avalonia-docs/',
+  organizationName: 'avaloniachina', // Usually your GitHub org/user name.
+  projectName: 'avalonia-docs', // Usually your repo name.
+  deploymentBranch: "gh-pages",
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'throw',
   i18n: {
