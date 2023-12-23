@@ -1,8 +1,8 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const lightCodeTheme = require('prism-react-renderer').themes.github;
+const darkCodeTheme = require('prism-react-renderer').themes.dracula;
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -18,7 +18,7 @@ const config = {
   onBrokenMarkdownLinks: 'throw',
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'zh-Hans'],
+    locales: ['en', 'ru', 'zh-Hans'],
   },
   headTags: [
     {
@@ -95,8 +95,8 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl: 'https://github.com/AvaloniaUI/avalonia-docs/tree/main',
-          //includeCurrentVersion: false,
-          //lastVersion: '0.10.x',
+          editLocalizedFiles: true,
+          lastVersion: 'current',
           versions: {
             current: {
               label: "11.0.0",
@@ -203,7 +203,7 @@ const config = {
             items: [
               {
                 label: 'Tutorial',
-                to: '/docs/next/get-started/test-drive/introduction',
+                to: '/docs/get-started/test-drive/introduction',
               },
             ],
           },

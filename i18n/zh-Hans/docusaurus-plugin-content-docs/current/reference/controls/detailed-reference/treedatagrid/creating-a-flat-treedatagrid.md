@@ -27,7 +27,7 @@ namespace AvaloniaControls.ViewModels
     {
         private ObservableCollection<Person> _people;
 
-        public HierarchicalTreeDataGridSource<Person> PersonSource { get; }
+        public FlatTreeDataGridSource<Person> PersonSource { get; }
 
         public MainWindowViewModel()
         {
@@ -39,7 +39,7 @@ namespace AvaloniaControls.ViewModels
                 new Person ( "Jazmine", "Schroeder", 52 ),
             };
                           
-            PersonSource = new HierarchicalTreeDataGridSource<Person>(_people)
+            PersonSource = new FlatTreeDataGridSource<Person>(_people)
             {
                 Columns =
                 {
@@ -73,7 +73,7 @@ public class Person
 }
 ```
 
-The data source also defines how to map the data model to rows and columns in the tree data grid. Because this example displays flat data, the data source is using a `FlatTreeDataGridSource<Person>` property on the view model.&#x20;
+The data source also defines how to map the data model to rows and columns in the tree data grid. Because this example displays flat data, the data source is using a `FlatTreeDataGridSource<Person>` property on the view model.
 
 There are three columns defined with the `TextColumn` class. Each takes a lambda to return the column value.
 

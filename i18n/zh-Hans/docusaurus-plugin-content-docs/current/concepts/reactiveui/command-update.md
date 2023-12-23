@@ -6,9 +6,9 @@ description: CONCEPTS - ReactiveUI
 
 本页面介绍了如何使用Avalonia UI绑定来从具有`Command`属性的按钮等控件上启动对视图模型的更改。
 
-例如，您可以使用以下视图模型和在`ButtonAction`方法中定义的操作：&#x20;
+例如，您可以使用以下视图模型和在`ButtonAction`方法中定义的操作：
 
-```
+```csharp
 public class MainWindowViewModel : ViewModelBase
 {
     private string _greeting = "欢迎使用Avalonia！";
@@ -28,7 +28,7 @@ public class MainWindowViewModel : ViewModelBase
 
 然后，在相应的XAML中定义两个控件：
 
-```
+```xml
 <TextBlock Text="{Binding Greeting}" />
 <Button Command="{Binding ButtonAction}">更改</Button>
 ```
